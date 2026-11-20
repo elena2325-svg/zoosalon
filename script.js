@@ -53,7 +53,7 @@ document.querySelector('#booking')?.addEventListener('submit', (e) => {
     `Услуга: ${d.get('service')}`,
     `Питомец: ${d.get('pet')}`,
     `Удобное время: ${d.get('time') || 'любое'}`,
-    `Комментарий: ${d.get('comment') || '—'}`,
+    `Комментарий: ${d.get('comment') || 'нет'}`,
   ].join('\n');
   const result = form.querySelector('#f-result');
   result.value = text;
